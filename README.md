@@ -1,6 +1,11 @@
 # find
 
-search for all json files recursively
+search all json files recursively
 ```bash
 find . -name "*.json"
+```
+
+find and delete
+```bash
+find . -name ".DS_Store" -exec rm -rf {} \;
 ```
