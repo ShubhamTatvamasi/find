@@ -10,7 +10,12 @@ find and delete
 find . -name ".DS_Store" -exec rm -rf {} \;
 ```
 
-searcch for only directories
+search only for directories
 ```bash
 find . -type d
+```
+
+search only for files
+```bash
+find . -type f
 ```
