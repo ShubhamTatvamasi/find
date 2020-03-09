@@ -9,3 +9,8 @@ find and delete
 ```bash
 find . -name ".DS_Store" -exec rm -rf {} \;
 ```
+
+searcch for only directories
+```bash
+find . -type d
+```
