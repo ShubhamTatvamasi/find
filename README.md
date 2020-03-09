@@ -19,3 +19,8 @@ search only for files
 ```bash
 find . -type f
 ```
+
+search for files - case insensitive
+```bash
+find . -type f -iname "test*"
+```
