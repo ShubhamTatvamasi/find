@@ -57,7 +57,7 @@ find files more than 5 megabyte
 ```bash
 find . -type f -size +5M
 ```
-> use `k` for kilobytes and 'G' for gegabytes
+> use `k` for kilobytes and 'G' for gigabytes
 
 find empty files
 ```bash
