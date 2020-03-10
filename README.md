@@ -7,8 +7,9 @@ find . -name "*.json"
 
 find and delete
 ```bash
-find . -name ".DS_Store" -exec rm -rf {} \;
+find . -name ".DS_Store" -exec rm -rf {} +
 ```
+> you can also use `\;` insted of `+`
 
 search only for directories
 ```bash
