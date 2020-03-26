@@ -80,3 +80,9 @@ find files only in current directory
 ```bash
 find . -type f -maxdepth 1
 ```
+
+find all `.js` files and replace `var` with `let`
+```bash
+find . -iname "*.js" -exec sed -i -e 's/var/let/g' {} +
+```
+
