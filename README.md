@@ -85,4 +85,4 @@ find all `.js` files and replace `var` with `let`
 ```bash
 find . -iname "*.js" -exec sed -i '' 's/var/let/g' {} +
 ```
-
+> this command is for mac, remove `''` if you want to run this on linux
