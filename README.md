@@ -86,3 +86,18 @@ find all `.js` files and replace `var` with `let`
 find . -iname "*.js" -exec sed -i '' 's/var/let/g' {} +
 ```
 > this command is for mac, remove `''` if you want to run this on linux
+
+---
+
+find latest migration files
+```bash
+docker run --rm -it \
+  -v ${PWD}:/usr/src/app \
+  -w /usr/src/app \
+  ubuntu \
+  find . -type d -name "migrations" \
+  -exec bash -c ' \
+  key=$(echo {} | echo $(read s; s=${s^^}; echo ${s//\//_}) | cut -c 3-); \
+  value=$(ls -1 -I __init__.py -I __pycache__ {} | tail -1 | cut -f1 -d "."); \
+  echo "${key}=${value}"' \;
+```
