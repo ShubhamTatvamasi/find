@@ -26,6 +26,11 @@ search for files - case insensitive
 find . -type f -iname "test*"
 ```
 
+find word `magma` and replace on all files. This is case Insensitive Search.
+```bash
+find -type f -exec sed -i 's/magma/superman/gi' {} +
+```
+
 find files modified in last 10 minutes
 ```bash
 find . -type f -mmin -10
